@@ -6,13 +6,23 @@ class Person {
 	
 	//Data
 	//Subroutines/Methods
+
+	
+	int getAge() {
+		return age;
+	}
+	
+	String getName() {
+		return name;
+	}
 	
 	void speak() {
 		System.out.println("My name is " + name + " and I'm " + age + " years old.");
 	}
 	
-	void sayHello() {
-		System.out.println("Hi there!");
+	int calculateYearsToRetirement() {
+		int years = 65 - age;
+		return years;
 	}
 }
 
@@ -20,17 +30,12 @@ class Person {
 public class MyClass {
 
 	public static void main(String[] args) {
+		
 		Person person1 = new Person();
 		
-		person1.name = "Glen Close";
-		person1.age = 22;
 		person1.speak();
-		person1.sayHello();
-		
-		Person person2 = new Person();
-		person2.age = 45;
-		person2.name = "Glenn Hysen";
-		person2.speak();
+		person1.calculateYearsToRetirement();
+		System.out.println(person1.getName() + " is " + person1.getAge() + " years old!");
 
 	}
 
