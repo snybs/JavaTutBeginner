@@ -10,7 +10,7 @@ public class Game  {
 		SwingUtilities.invokeLater(new Runnable() {
 			@Override
 			public void run() {
-				new Game();
+				new Hangman().setVisible(true);;
 			}
 		}
 				
@@ -45,6 +45,8 @@ public class Game  {
 		frame.setVisible(true);
 		
 		*/
+		
+		
 		
 		
 
